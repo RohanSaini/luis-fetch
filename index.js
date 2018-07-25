@@ -1,6 +1,6 @@
 var request=require('request');
 
-let getjson=function(hitpoint,sentence)
+exports.getjson=function(hitpoint,sentence)
 {
     return new Promise(function(resolve,reject){
         var options={method:'GET',url:hitpoint+sentence};
@@ -24,7 +24,7 @@ let getjson=function(hitpoint,sentence)
 
 }
 
-let gettopintent=function(hitpoint,sentence)
+exports.gettopintent=function(hitpoint,sentence)
 {
     return new Promise(function(resolve,reject){
         var options={method:'GET',url:hitpoint+sentence};
@@ -51,7 +51,7 @@ let gettopintent=function(hitpoint,sentence)
 
 
 
-let getallentities=function(hitpoint,sentence)
+exports.getallentities=function(hitpoint,sentence)
 {
     return new Promise(function(resolve,reject){
         var options={method:'GET',url:hitpoint+sentence};
@@ -75,7 +75,7 @@ let getallentities=function(hitpoint,sentence)
     });
 
 }
-let getentitytype=function(hitpoint,sentence)
+exports.getentitytype=function(hitpoint,sentence)
 {
     return new Promise(function(resolve,reject){
         var options={method:'GET',url:hitpoint+sentence};
@@ -101,7 +101,7 @@ let getentitytype=function(hitpoint,sentence)
 
 }
 
-let getentity=function(hitpoint,sentence)
+exports.getentity=function(hitpoint,sentence)
 {
     return new Promise(function(resolve,reject){
         var options={method:'GET',url:hitpoint+sentence};
@@ -122,7 +122,7 @@ let getentity=function(hitpoint,sentence)
 
 }
 
-let getentitylength=function(hitpoint,sentence)
+exports.getentitylength=function(hitpoint,sentence)
 {
     return new Promise(function(resolve,reject){
         var options={method:'GET',url:hitpoint+sentence};
@@ -142,7 +142,7 @@ let getentitylength=function(hitpoint,sentence)
     });
 
 }
-let getsentiment=function(hitpoint,sentence)
+exports.getsentiment=function(hitpoint,sentence)
 {
     return new Promise(function(resolve,reject){
         var options={method:'GET',url:hitpoint+sentence};
