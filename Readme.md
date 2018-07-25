@@ -31,6 +31,7 @@ Function that you can use: -
 
 You will need a Luis model up and running to use this package.
 Create Luis model https://www.luis.ai/
+Reade this also https://github.com/RohanSaini/luis-fetch/blob/master/How%20you%20can%20use%20multiple%20luis%20model%20in%20your%20chat%20bot.docx
 
 
     
